@@ -1,0 +1,528 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Orange",
+      "category": "Fruits",
+      "price": 4.99,
+      "discountPrice": 3.99,
+      "rating": 5,
+      "image": "https://themewagon.github.io/fruitables/img/fruite-item-1.jpg",
+      "isOrganic": true,
+      "isFeatured": true,
+      "description": "Fresh organic oranges rich in vitamin C, perfect for juicing or eating.",
+      "details": {
+        "origin": "Spain",
+        "weight": "1 kg",
+        "quality": "Premium Grade",
+        "freshness": "Freshly harvested",
+        "packaging": "Eco-friendly mesh bag",
+        "nutritionalValue": {
+          "calories": "43 kcal per 100g",
+          "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B6"],
+          "minerals": ["Potassium", "Calcium"]
+        },
+        "storage": "Store in a cool, dry place or refrigerate for extended freshness"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Banana",
+      "category": "Fruits",
+      "price": 2.99,
+      "discountPrice": null,
+      "rating": 4,
+      "image": "https://themewagon.github.io/fruitables/img/fruite-item-3.jpg",
+      "isOrganic": true,
+      "isFeatured": true,
+      "description": "Sweet, creamy bananas that are perfect for snacking, smoothies, or baking.",
+      "details": {
+        "origin": "Ecuador",
+        "weight": "1 kg (approx. 6-7 bananas)",
+        "quality": "Grade A",
+        "freshness": "Ripened naturally",
+        "packaging": "None, sold as bunch",
+        "nutritionalValue": {
+          "calories": "89 kcal per 100g",
+          "vitamins": ["Vitamin B6", "Vitamin C"],
+          "minerals": ["Potassium", "Magnesium"]
+        },
+        "storage": "Store at room temperature. Refrigerate to slow ripening."
+      }
+    },
+    {
+      "id": 3,
+      "name": "Strawberry",
+      "category": "Berries",
+      "price": 5.99,
+      "discountPrice": 4.99,
+      "rating": 5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_0ezu3hXinyXiwiRYkmfSFqjn_uGrjiiX_w&s",
+      "isOrganic": true,
+      "isFeatured": true,
+      "description": "Juicy, sweet strawberries - perfect for desserts or eating fresh.",
+      "details": {
+        "origin": "Local Farm",
+        "weight": "500g",
+        "quality": "Premium",
+        "freshness": "Fresh picked",
+        "packaging": "Recyclable plastic container",
+        "nutritionalValue": {
+          "calories": "32 kcal per 100g",
+          "vitamins": ["Vitamin C", "Folate", "Vitamin B6"],
+          "minerals": ["Potassium", "Manganese"]
+        },
+        "storage": "Refrigerate immediately. Best consumed within 2-3 days."
+      }
+    },
+    {
+      "id": 4,
+      "name": "Apple",
+      "category": "Fruits",
+      "price": 3.49,
+      "discountPrice": null,
+      "rating": 4,
+      "image": "https://png.pngtree.com/png-vector/20231017/ourmid/pngtree-fresh-apple-fruit-red-png-image_10203073.png",
+      "isOrganic": true,
+      "isFeatured": true,
+      "description": "Crisp, sweet apples perfect for snacking or baking.",
+      "details": {
+        "origin": "Washington, USA",
+        "weight": "1 kg (approx. 5-6 apples)",
+        "quality": "Grade A",
+        "freshness": "Harvested within the week",
+        "packaging": "Loose or paper bag",
+        "nutritionalValue": {
+          "calories": "52 kcal per 100g",
+          "vitamins": ["Vitamin C", "Vitamin K"],
+          "minerals": ["Potassium"]
+        },
+        "storage": "Store in refrigerator for up to 2 weeks."
+      }
+    },
+    {
+      "id": 5,
+      "name": "Carrot",
+      "category": "Vegetables",
+      "price": 1.99,
+      "discountPrice": 1.49,
+      "rating": 5,
+      "image": "https://static.vecteezy.com/system/resources/previews/030/663/871/large_2x/carrots-with-transparent-background-high-quality-ultra-hd-free-photo.jpg",
+      "isOrganic": true,
+      "isFeatured": true,
+      "description": "Crunchy, sweet carrots rich in beta-carotene and antioxidants.",
+      "details": {
+        "origin": "Local Farm",
+        "weight": "500g",
+        "quality": "Organic Certified",
+        "freshness": "Freshly harvested",
+        "packaging": "Biodegradable bag",
+        "nutritionalValue": {
+          "calories": "41 kcal per 100g",
+          "vitamins": ["Vitamin A", "Vitamin K", "Biotin"],
+          "minerals": ["Potassium", "Manganese"]
+        },
+        "storage": "Refrigerate for up to 3 weeks."
+      }
+    },
+    {
+      "id": 6,
+      "name": "Tomato",
+      "category": "Vegetables",
+      "price": 2.99,
+      "discountPrice": null,
+      "rating": 4,
+      "image": "https://png.pngtree.com/png-vector/20230903/ourmid/pngtree-fruit-fresh-tomato-png-image_9959799.png",
+      "isOrganic": true,
+      "isFeatured": true,
+      "description": "Ripe, juicy tomatoes perfect for salads, sauces, or sandwiches.",
+      "details": {
+        "origin": "Local Greenhouse",
+        "weight": "500g (approx. 4 medium tomatoes)",
+        "quality": "Premium",
+        "freshness": "Harvested ripe",
+        "packaging": "Cardboard punnet",
+        "nutritionalValue": {
+          "calories": "18 kcal per 100g",
+          "vitamins": ["Vitamin C", "Vitamin K", "Vitamin E"],
+          "minerals": ["Potassium", "Folate"]
+        },
+        "storage": "Store at room temperature for best flavor. Refrigerate only when fully ripe."
+      }
+    },
+    {
+      "id": 7,
+      "name": "Broccoli",
+      "category": "Vegetables",
+      "price": 2.49,
+      "discountPrice": 1.99,
+      "rating": 4,
+      "image": "https://img.freepik.com/premium-photo/head-broccoli-white-background-white-clear-surface-png-transparent-background_94628-45625.jpg",
+      "isOrganic": true,
+      "isFeatured": true,
+      "description": "Fresh broccoli florets rich in vitamins and minerals.",
+      "details": {
+        "origin": "Local Farm",
+        "weight": "400g per head",
+        "quality": "Grade A",
+        "freshness": "Farm Fresh",
+        "packaging": "Loose",
+        "nutritionalValue": {
+          "calories": "34 kcal per 100g",
+          "vitamins": ["Vitamin C", "Vitamin K", "Folate"],
+          "minerals": ["Potassium", "Manganese"]
+        },
+        "storage": "Refrigerate unwashed in a loose or perforated plastic bag for up to 5 days."
+      }
+    },
+    {
+      "id": 8,
+      "name": "Raspberry",
+      "category": "Berries",
+      "price": 6.99,
+      "discountPrice": 5.99,
+      "rating": 5,
+      "image": "https://themewagon.github.io/fruitables/img/fruite-item-2.jpg",
+      "isOrganic": true,
+      "isFeatured": false,
+      "description": "Sweet and tangy raspberries, perfect for desserts or snacking.",
+      "details": {
+        "origin": "Local Farm",
+        "weight": "250g",
+        "quality": "Premium",
+        "freshness": "Picked daily",
+        "packaging": "Recyclable plastic container",
+        "nutritionalValue": {
+          "calories": "52 kcal per 100g",
+          "vitamins": ["Vitamin C", "Vitamin K"],
+          "minerals": ["Potassium", "Manganese"]
+        },
+        "storage": "Refrigerate immediately. Consume within 1-2 days for best quality."
+      }
+    },
+    {
+      "id": 9,
+      "name": "Avocado",
+      "category": "Fruits",
+      "price": 3.99,
+      "discountPrice": null,
+      "rating": 5,
+      "image": "https://www.pngkey.com/png/full/13-133843_free-png-avocado-png-images-transparent-avocado-png.png",
+      "isOrganic": true,
+      "isFeatured": false,
+      "description": "Creamy, nutritious avocados perfect for guacamole, toast, or salads.",
+      "details": {
+        "origin": "Mexico",
+        "weight": "1 piece (approx. 200g)",
+        "quality": "Premium",
+        "freshness": "Ready to ripen",
+        "packaging": "Loose",
+        "nutritionalValue": {
+          "calories": "160 kcal per 100g",
+          "vitamins": ["Vitamin K", "Folate", "Vitamin C"],
+          "minerals": ["Potassium", "Copper"]
+        },
+        "storage": "Store at room temperature until ripe, then refrigerate."
+      }
+    },
+    {
+      "id": 10,
+      "name": "Cucumber",
+      "category": "Vegetables",
+      "price": 1.79,
+      "discountPrice": 1.49,
+      "rating": 4,
+      "image": "https://gallery.yopriceville.com/downloadfullsize/send/29731",
+      "isOrganic": true,
+      "isFeatured": false,
+      "description": "Crisp, refreshing cucumbers perfect for salads and sandwiches.",
+      "details": {
+        "origin": "Local Greenhouse",
+        "weight": "300g (1 medium cucumber)",
+        "quality": "Grade A",
+        "freshness": "Fresh picked",
+        "packaging": "Loose or wrapped",
+        "nutritionalValue": {
+          "calories": "15 kcal per 100g",
+          "vitamins": ["Vitamin K", "Vitamin C"],
+          "minerals": ["Potassium", "Magnesium"]
+        },
+        "storage": "Refrigerate for up to one week."
+      }
+    },
+    {
+      "id": 11,
+      "name": "Blueberry",
+      "category": "Berries",
+      "price": 7.99,
+      "discountPrice": 6.99,
+      "rating": 5,
+      "image": "https://pngimg.com/d/blueberries_PNG39.png",
+      "isOrganic": true,
+      "isFeatured": false,
+      "description": "Sweet, antioxidant-rich blueberries ideal for snacking or baking.",
+      "details": {
+        "origin": "Local Farm",
+        "weight": "250g",
+        "quality": "Premium",
+        "freshness": "Fresh harvest",
+        "packaging": "Recyclable plastic container",
+        "nutritionalValue": {
+          "calories": "57 kcal per 100g",
+          "vitamins": ["Vitamin K", "Vitamin C", "Vitamin B6"],
+          "minerals": ["Manganese"]
+        },
+        "storage": "Refrigerate. Best consumed within 1 week."
+      }
+    },
+    {
+      "id": 12,
+      "name": "Bell Pepper",
+      "category": "Vegetables",
+      "price": 2.99,
+      "discountPrice": 2.49,
+      "rating": 4,
+      "image": "https://themewagon.github.io/fruitables/img/vegetable-item-4.jpg",
+      "isOrganic": true,
+      "isFeatured": false,
+      "description": "Colorful, crunchy bell peppers perfect for salads, stir-fries, or stuffing.",
+      "details": {
+        "origin": "Holland",
+        "weight": "Each (approx. 200g)",
+        "quality": "Premium",
+        "freshness": "Greenhouse fresh",
+        "packaging": "Loose",
+        "nutritionalValue": {
+          "calories": "20 kcal per 100g",
+          "vitamins": ["Vitamin C", "Vitamin A", "Vitamin B6"],
+          "minerals": ["Potassium", "Folate"]
+        },
+        "storage": "Refrigerate for up to one week."
+      }
+    }
+  ],
+  "best_sellers": [
+    {
+      "id": 1,
+      "name": "Organic Tomato",
+      "category": "Vegetables",
+      "price": 3.49,
+      "discountPrice": 2.99,
+      "rating": 5,
+      "image": "https://png.pngtree.com/png-vector/20230903/ourmid/pngtree-fruit-fresh-tomato-png-image_9959799.png",
+      "isOrganic": true,
+      "description": "Premium organic tomatoes grown without pesticides, perfect for salads and cooking.",
+      "details": {
+        "origin": "Local Farm",
+        "weight": "500g (approx. 4 tomatoes)",
+        "quality": "Organic Certified",
+        "freshness": "Harvested daily",
+        "packaging": "Eco-friendly container",
+        "nutritionalValue": {
+          "calories": "18 kcal per 100g",
+          "vitamins": ["Vitamin C", "Vitamin K", "Vitamin A"],
+          "minerals": ["Potassium", "Manganese"]
+        },
+        "storage": "Store at room temperature. Refrigerate once ripe."
+      }
+    },
+    {
+      "id": 2,
+      "name": "Organic Orange",
+      "category": "Fruits",
+      "price": 5.49,
+      "discountPrice": 4.49,
+      "rating": 5,
+      "image": "https://themewagon.github.io/fruitables/img/fruite-item-1.jpg",
+      "isOrganic": true,
+      "description": "Sweet, juicy organic oranges packed with vitamin C and natural flavor.",
+      "details": {
+        "origin": "California, USA",
+        "weight": "1 kg (approx. 5-6 oranges)",
+        "quality": "Organic Premium",
+        "freshness": "Freshly harvested",
+        "packaging": "Mesh bag",
+        "nutritionalValue": {
+          "calories": "43 kcal per 100g",
+          "vitamins": ["Vitamin C", "Vitamin A", "Folate"],
+          "minerals": ["Potassium", "Calcium"]
+        },
+        "storage": "Keep at room temperature for 1 week or refrigerate for up to 3 weeks."
+      }
+    },
+    {
+      "id": 3,
+      "name": "Organic Banana",
+      "category": "Fruits",
+      "price": 3.99,
+      "discountPrice": 3.49,
+      "rating": 4,
+      "image": "https://themewagon.github.io/fruitables/img/fruite-item-3.jpg",
+      "isOrganic": true,
+      "description": "Naturally grown organic bananas, perfect for a quick energy boost or smoothies.",
+      "details": {
+        "origin": "Costa Rica",
+        "weight": "1 kg (approx. 6-7 bananas)",
+        "quality": "Organic Certified",
+        "freshness": "Ripened naturally",
+        "packaging": "None, sold as bunch",
+        "nutritionalValue": {
+          "calories": "89 kcal per 100g",
+          "vitamins": ["Vitamin B6", "Vitamin C", "Folate"],
+          "minerals": ["Potassium", "Magnesium"]
+        },
+        "storage": "Store at room temperature until ripe, then refrigerate to extend freshness."
+      }
+    },
+    {
+      "id": 4,
+      "name": "Organic Apricot",
+      "category": "Fruits",
+      "price": 4.99,
+      "discountPrice": 4.29,
+      "rating": 4,
+      "image": "https://themewagon.github.io/fruitables/img/fruite-item-4.jpg",
+      "isOrganic": true,
+      "description": "Organic apricots with the perfect balance of sweetness and tanginess.",
+      "details": {
+        "origin": "Turkey",
+        "weight": "500g (approx. 8-10 fruits)",
+        "quality": "Organic Premium",
+        "freshness": "Seasonal fresh",
+        "packaging": "Eco-friendly container",
+        "nutritionalValue": {
+          "calories": "48 kcal per 100g",
+          "vitamins": ["Vitamin A", "Vitamin C", "Vitamin E"],
+          "minerals": ["Potassium", "Iron"]
+        },
+        "storage": "Ripen at room temperature, then refrigerate for up to 3-5 days."
+      }
+    },
+    {
+      "id": 5,
+      "name": "Organic Blackberry",
+      "category": "Berries",
+      "price": 7.49,
+      "discountPrice": 6.99,
+      "rating": 5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Ffumpd6YKlnZvU9ZC2FvpY3Tz4WZwT6-4g&s",
+      "isOrganic": true,
+      "description": "Hand-picked organic blackberries, bursting with flavor and nutrients.",
+      "details": {
+        "origin": "Local Farm",
+        "weight": "250g",
+        "quality": "Organic Premium",
+        "freshness": "Fresh picked",
+        "packaging": "Recyclable container",
+        "nutritionalValue": {
+          "calories": "43 kcal per 100g",
+          "vitamins": ["Vitamin C", "Vitamin K", "Vitamin E"],
+          "minerals": ["Manganese", "Copper"]
+        },
+        "storage": "Refrigerate immediately. Best consumed within 2-3 days."
+      }
+    },
+    {
+      "id": 6,
+      "name": "Organic Avocado",
+      "category": "Fruits",
+      "price": 4.99,
+      "discountPrice": 4.49,
+      "rating": 5,
+      "image": "https://www.pngkey.com/png/full/13-133843_free-png-avocado-png-images-transparent-avocado-png.png",
+      "isOrganic": true,
+      "description": "Creamy, nutrient-dense organic avocados grown without synthetic pesticides.",
+      "details": {
+        "origin": "Mexico",
+        "weight": "Each (approx. 200g)",
+        "quality": "Organic Certified",
+        "freshness": "Ready to ripen",
+        "packaging": "Eco-friendly packaging",
+        "nutritionalValue": {
+          "calories": "160 kcal per 100g",
+          "vitamins": ["Vitamin K", "Folate", "Vitamin C"],
+          "minerals": ["Potassium", "Copper", "Magnesium"]
+        },
+        "storage": "Store at room temperature until ripe, then refrigerate for up to 3-5 days."
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Fruits",
+      "image": "https://static.vecteezy.com/system/resources/previews/029/720/177/non_2x/mixed-fruit-transparent-background-png.png",
+      "description": "Fresh, seasonal fruits sourced directly from local and international farms."
+    },
+    {
+      "id": 2,
+      "name": "Vegetables",
+      "image": "https://png.pngtree.com/png-vector/20240204/ourmid/pngtree-colorful-fresh-group-of-vegetables-and-fruits-healthy-broccoli-vegetables-png-image_11629893.png",
+      "description": "Crisp, nutritious vegetables grown using sustainable farming practices."
+    },
+    {
+      "id": 3,
+      "name": "Berries",
+      "image": "https://www.pngplay.com/wp-content/uploads/13/Berries-Transparent-PNG.png",
+      "description": "Sweet, tangy berries packed with antioxidants and essential nutrients."
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "name": "Leslie Welch",
+      "email": "leslie.welch@example.com",
+      "comment": "I am very pleased, comfortable and silky",
+      "image_url": "https://randomuser.me/api/portraits/women/89.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Kim Bennett",
+      "email": "kim.bennett@example.com",
+      "comment": "This jacket is a true classic! It’s both stylish and perfect for casual outfits.",
+      "image_url": "https://randomuser.me/api/portraits/women/50.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ben May",
+      "email": "ben.may@example.com",
+      "comment": "That oversized sweatshirt looks so comfy, ideal for a weekend look!",
+      "image_url": "https://randomuser.me/api/portraits/men/40.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Sean Scott",
+      "email": "sean.scott@example.com",
+      "comment": "The cut of these jeans is amazing! It makes your legs look longer.",
+      "image_url": "https://randomuser.me/api/portraits/men/82.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Carlos White",
+      "email": "carlos.white@example.com",
+      "comment": "The color of this dress is so vibrant, it gives off real spring vibes!",
+      "image_url": "https://randomuser.me/api/portraits/men/20.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Misty Taylor",
+      "email": "misty.taylor@example.com",
+      "comment": "Those shoes are really stylish! They add a nice touch to your outfit.",
+      "image_url": "https://randomuser.me/api/portraits/women/91.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Hunter Reynolds",
+      "email": "hunter.reynolds@example.com",
+      "comment": "A leather jacket is a timeless piece, instantly making any outfit look cool.",
+      "image_url": "https://randomuser.me/api/portraits/men/12.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Dawn Peck",
+      "email": "dawn.peck@example.com",
+      "comment": "The shirt and t-shirt combo creates a look that’s both comfortable and stylish.",
+      "image_url": "https://randomuser.me/api/portraits/men/23.jpg"
+    }
+  ]
+}
