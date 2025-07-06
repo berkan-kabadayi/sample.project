@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üyelik Sistemi</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Üyelik Sistemi</h1>
+        <div class="form-container" id="register-container">
+            <h2>Kayıt Ol</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Kullanıcı Adı" required>
+                <input type="email" id="register-email" placeholder="E-posta" required>
+                <div class="password-group">
+                    <input type="password" id="register-password" placeholder="Şifre" required>
+                    <label class="show-password-label">
+                        <input type="checkbox" id="register-show-password"> Şifreyi Göster
+                    </label>
+                </div>
+                <label class="human-check">
+                    <input type="checkbox" id="register-human" required> Ben robot değilim
+                </label>
+                <button type="submit">Kayıt Ol</button>
+            </form>
+            <p>Zaten üye misiniz? <a href="#" id="show-login">Giriş Yap</a></p>
+        </div>
+        <div class="form-container" id="login-container" style="display:none;">
+            <h2>Giriş Yap</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="E-posta" required>
+                <div class="password-group">
+                    <input type="password" id="login-password" placeholder="Şifre" required>
+                    <label class="show-password-label">
+                        <input type="checkbox" id="login-show-password"> Şifreyi Göster
+                    </label>
+                </div>
+                <label class="human-check">
+                    <input type="checkbox" id="login-human" required> Ben robot değilim
+                </label>
+                <button type="submit">Giriş Yap</button>
+            </form>
+            <p>Hesabınız yok mu? <a href="#" id="show-register">Kayıt Ol</a></p>
+        </div>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html> 
