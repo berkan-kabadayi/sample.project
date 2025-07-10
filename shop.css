@@ -15,6 +15,7 @@ a {
   text-decoration: none;
 }
 
+
 a:hover {
   color: #64a10f;
 }
@@ -24,15 +25,18 @@ a:hover {
   background-color: transparent;
 }
 
-.page-header-bg {
-  background-image: url('Assets/download.jpeg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
+.page-header {
   position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(img/apricot-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 200px;
+  text-align: center;
+  padding: 60px 0 5px 0;
+  margin-top: 100px;
+  margin-bottom: 2rem;
 }
-
 .page-header-bg::before {
   content: '';
   position: absolute;
@@ -246,3 +250,4 @@ output {
 .text-lightgray {
   color: #999999;
 }
+
