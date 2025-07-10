@@ -1,0 +1,160 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Brocoli",
+      "category": "Vegetables",
+      "price": 3.35,
+      "originalPrice": 4.50,
+      "image": "img/brocoli.jpg",
+      "rating": 4,
+      "description": "The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.",
+      "longDescription": "Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish filefish Antarctic icefish goldeye aholehole trumpetfish pilot fish airbreathing catfish, electric ray sweeper.",
+      "specifications": {
+        "weight": "1 kg",
+        "origin": "Agro Farm",
+        "quality": "Organic",
+        "check": "Healthy",
+        "minWeight": "250 Kg"
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Jason Smith",
+          "date": "April 12, 2024",
+          "rating": 4,
+          "comment": "The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc."
+        },
+        {
+          "id": 2,
+          "user": "Sam Peters",
+          "date": "April 12, 2024",
+          "rating": 3,
+          "comment": "The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Apples",
+      "category": "Fruits",
+      "price": 2.99,
+      "originalPrice": 4.11,
+      "image": "img/featur-1.jpg",
+      "rating": 4,
+      "description": "Fresh organic apples from local farms",
+      "longDescription": "Our apples are carefully selected and harvested at peak ripeness to ensure the best flavor and nutritional value.",
+      "specifications": {
+        "weight": "1 kg",
+        "origin": "Local Farm",
+        "quality": "Organic",
+        "check": "Fresh",
+        "minWeight": "500 g"
+      },
+      "reviews": [
+        {
+          "id": 1,
+          "user": "John Doe",
+          "date": "April 10, 2024",
+          "rating": 5,
+          "comment": "Excellent quality apples, very fresh and tasty!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Strawberries",
+      "category": "Fruits",
+      "price": 2.99,
+      "originalPrice": 4.11,
+      "image": "img/featur-2.jpg",
+      "rating": 4,
+      "description": "Sweet and juicy strawberries",
+      "longDescription": "Hand-picked strawberries that are perfect for desserts or eating fresh.",
+      "specifications": {
+        "weight": "500 g",
+        "origin": "Berry Farm",
+        "quality": "Premium",
+        "check": "Fresh",
+        "minWeight": "250 g"
+      },
+      "reviews": []
+    },
+    {
+      "id": 4,
+      "name": "Banana",
+      "category": "Fruits",
+      "price": 7.99,
+      "originalPrice": 9.99,
+      "image": "img/vegetable-item-3.png",
+      "rating": 4,
+      "description": "Ripe and ready to eat bananas",
+      "longDescription": "Perfectly ripened bananas with natural sweetness and great texture.",
+      "specifications": {
+        "weight": "1 kg",
+        "origin": "Tropical Farm",
+        "quality": "Organic",
+        "check": "Fresh",
+        "minWeight": "500 g"
+      },
+      "reviews": []
+    },
+    {
+      "id": 5,
+      "name": "Bell Pepper",
+      "category": "Vegetables",
+      "price": 7.99,
+      "originalPrice": 9.99,
+      "image": "img/vegetable-item-4.jpg",
+      "rating": 4,
+      "description": "Colorful and crisp bell peppers",
+      "longDescription": "Fresh bell peppers in various colors, perfect for salads and cooking.",
+      "specifications": {
+        "weight": "1 kg",
+        "origin": "Local Farm",
+        "quality": "Organic",
+        "check": "Fresh",
+        "minWeight": "300 g"
+      },
+      "reviews": []
+    },
+    {
+      "id": 6,
+      "name": "Potatoes",
+      "category": "Vegetables",
+      "price": 7.99,
+      "originalPrice": 9.99,
+      "image": "img/vegetable-item-5.jpg",
+      "rating": 4,
+      "description": "Fresh potatoes for all your cooking needs",
+      "longDescription": "High-quality potatoes perfect for boiling, frying, or baking.",
+      "specifications": {
+        "weight": "2 kg",
+        "origin": "Local Farm",
+        "quality": "Organic",
+        "check": "Fresh",
+        "minWeight": "1 kg"
+      },
+      "reviews": []
+    },
+    {
+      "id": 7,
+      "name": "Parsley",
+      "category": "Vegetables",
+      "price": 4.99,
+      "originalPrice": 6.99,
+      "image": "img/vegetable-item-6.jpg",
+      "rating": 4,
+      "description": "Fresh parsley for garnishing and cooking",
+      "longDescription": "Aromatic parsley that adds flavor and freshness to your dishes.",
+      "specifications": {
+        "weight": "100 g",
+        "origin": "Herb Garden",
+        "quality": "Organic",
+        "check": "Fresh",
+        "minWeight": "50 g"
+      },
+      "reviews": []
+    }
+  ]
+} 
