@@ -1,11 +1,845 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Google Fonts (Poppins) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Kendi CSS'in -->
+    <link rel="stylesheet" href="home.css" />
+    <title>Fruitables</title>
+  </head>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar start -->
+    <div class="container-fluid fixed-top navbar-bg-color">
+      <div class="container topbar d-none d-lg-block">
+        <div class="d-flex justify-content-between">
+          <div class="top-info ps-2">
+            <small class="me-3"
+              ><i class="fas fa-map-marker-alt me-2 text-warning"></i>
+              <a href="#" class="text-white">123 Street, New York</a></small
+            >
+            <small class="me-3"
+              ><i class="fas fa-envelope me-2 text-warning"></i
+              ><a href="#" class="text-white">Email@Example.com</a></small
+            >
+          </div>
+          <div class="top-link pe-2">
+            <a href="#" class="text-white"
+              ><small class="text-white mx-2">Privacy Policy</small>/</a
+            >
+            <a href="#" class="text-white"
+              ><small class="text-white mx-2">Terms of Use</small>/</a
+            >
+            <a href="#" class="text-white"
+              ><small class="text-white ms-2">Sales and Refunds</small></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container px-0">
+        <nav class="navbar navbar-light bg-white navbar-expand-xl">
+          <a href="home.html" class="navbar-brand"
+            ><h1 class="text display-6 fw-semibold">Fruitables</h1></a
+          >
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars bestseller-color"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse bg-white nav-page-link"
+            id="navbarCollapse"
+          >
+            <div class="navbar-nav mx-auto">
+              <a href="home.html" class="nav-item home-text nav-link active"
+                >Home</a
+              >
+              <a href="shop.html" class="nav-item nav-link">Shop</a>
+              <a href="shop-detail.html" class="nav-item nav-link"
+                >Shop Detail</a
+              >
+            </div>
+            <div class="d-flex m-3 me-0">
+              <button
+                class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
+                data-bs-toggle="modal"
+                data-bs-target="#searchModal"
+              >
+                <i class="fas fa-search text-primary"></i>
+              </button>
+              <a href="#" class="position-relative me-4 my-auto">
+                <i class="shop-icon fa fa-shopping-bag fa-2x"></i>
+              </a>
+              <a href="#" class="my-auto">
+                <i class="shop-icon fas fa-user fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Herosection Start -->
+    <div class="container-fluid hero-section py-5 mb-5 hero-header">
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-md-12 col-lg-7">
+            <h4 class="mb-3 hero-organic-text">100% Organic Foods</h4>
+            <h1 class="mb-5 display-3 hero-header-text">
+              Organic Veggies & Fruits Foods
+            </h1>
+            <div class="position-relative mx-auto">
+              <input
+                class="form-control border-2 hero-input-border w-75 py-3 px-4 rounded-pill"
+                type="number"
+                placeholder="Search"
+              />
+              <button
+                type="submit"
+                class="btn hero-button border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100"
+                style="top: 0; right: 25%"
+              >
+                Submit Now
+              </button>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-5">
+            <div
+              id="carouselId"
+              class="carousel slide position-relative"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active rounded">
+                  <img
+                    src="assets/img/hero-img-1.png"
+                    class="img-fluid w-100 h-100 bg-secondary rounded"
+                    alt="First slide"
+                  />
+                  <a href="#" class="btn px-4 py-2 text-white rounded"
+                    >Fruites</a
+                  >
+                </div>
+                <div class="carousel-item rounded">
+                  <img
+                    src="assets/img/hero-img-2.jpg"
+                    class="img-fluid w-100 h-100 rounded"
+                    alt="Second slide"
+                  />
+                  <a href="#" class="btn px-4 py-2 text-white rounded"
+                    >Vesitables</a
+                  >
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Herosection End -->
+
+    <!-- Featurs Section Start -->
+    <div class="container-fluid featurs py-5">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="featurs-item text-center rounded bg-light p-4">
+              <div class="featurs-icon btn-square rounded-circle mb-5 mx-auto">
+                <i class="fas fa-car-side fa-3x text-white"></i>
+              </div>
+              <div class="featurs-content text-center">
+                <h5>Free Shipping</h5>
+                <p class="mb-0">Free on order over $300</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="featurs-item text-center rounded bg-light p-4">
+              <div class="featurs-icon btn-square rounded-circle mb-5 mx-auto">
+                <i class="fas fa-user-shield fa-3x text-white"></i>
+              </div>
+              <div class="featurs-content text-center">
+                <h5>Security Payment</h5>
+                <p class="mb-0">100% security payment</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="featurs-item text-center rounded bg-light p-4">
+              <div class="featurs-icon btn-square rounded-circle mb-5 mx-auto">
+                <i class="fas fa-exchange-alt fa-3x text-white"></i>
+              </div>
+              <div class="featurs-content text-center">
+                <h5>30 Day Return</h5>
+                <p class="mb-0">30 day money guarantee</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="featurs-item text-center rounded bg-light p-4">
+              <div class="featurs-icon btn-square rounded-circle mb-5 mx-auto">
+                <i class="fa fa-phone-alt fa-3x text-white"></i>
+              </div>
+              <div class="featurs-content text-center">
+                <h5>24/7 Support</h5>
+                <p class="mb-0">Support every time fast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featurs Section End -->
+
+    <!-- Featurs Start -->
+    <div class="container-fluid service py-5">
+      <div class="container py-5">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <a href="#">
+              <div
+                class="service-item bg-secondary rounded border features-card-border pb-4"
+              >
+                <img
+                  src="assets/img/featur-1.jpg"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <div class="px-4 rounded-bottom">
+                  <div
+                    class="service-content features-card-middle text-center p-4 rounded"
+                  >
+                    <h5 class="text-white">Fresh Apples</h5>
+                    <h3 class="mb-0">20% OFF</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="#">
+              <div
+                class="service-item bg-dark rounded border features-card-border-2 pb-4"
+              >
+                <img
+                  src="assets/img/featur-2.jpg"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <div class="px-4 rounded-bottom">
+                  <div class="service-content bg-light text-center p-4 rounded">
+                    <h5 class="features-card-text-2">Tasty Fruits</h5>
+                    <h3 class="mb-0 features-card-text-3">Free delivery</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a href="#">
+              <div
+                class="service-item rounded border features-card-border-3 pb-4"
+              >
+                <img
+                  src="assets/img/featur-3.jpg"
+                  class="img-fluid rounded-top w-100"
+                  alt=""
+                />
+                <div class="px-4 rounded-bottom">
+                  <div
+                    class="service-content features-card-middle-2 bg-secondary text-center p-4 rounded"
+                  >
+                    <h5 class="text-white">Exotic Vegitable</h5>
+                    <h3 class="mb-0 features-card-text-4">Discount 30$</h3>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Featurs End -->
+
+    <!-- Banner Section Start-->
+    <div class="container-fluid banner bg-banner my-5">
+      <div class="container py-5">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="py-4">
+              <h1 class="display-3 text-white fw-bold">Fresh Exotic Fruits</h1>
+              <p class="fw-normal display-3 banner-text mb-4">in Our Store</p>
+              <p class="mb-4 banner-text">
+                The generated Lorem Ipsum is therefore always free from
+                repetition injected humour, or non-characteristic words etc.
+              </p>
+              <a
+                href="#"
+                class="banner-btn btn border-2 border-white rounded-pill buy text-dark py-3 px-5"
+                >BUY</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <img
+                src="assets/img/banner-img.png"
+                class="img-fluid w-100 rounded"
+                alt=""
+              />
+              <div
+                class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute"
+                style="width: 140px; height: 140px; top: 0; left: 0"
+              >
+                <h1 style="font-size: 100px">1</h1>
+                <div class="d-flex flex-column">
+                  <span class="h2 mb-0">50$</span>
+                  <span class="h4 text-muted mb-0">kg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Section End -->
+
+    <!-- Bestsaler Product Start -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 700px">
+          <h1 class="display-4 bestseller-header fw-semibold">
+            Bestseller Products
+          </h1>
+
+          <p class="bestseller-header">
+            Latin words, combined with a handful of model sentence structures,
+            to generate Lorem Ipsum which looks reasonable.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-6 col-xl-4">
+            <div class="p-4 rounded bg-light">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <img
+                    src="assets/img/fruite-item-1.jpg"
+                    class="img-fluid bestseller-circle w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="col-6">
+                  <a href="#" class="h5">Organic Orange</a>
+                  <div class="d-flex my-3">
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4 class="mb-3">3.12 $</h4>
+                  <a
+                    href="#"
+                    class="btn border border-secondary rounded-pill px-3 bestseller-color"
+                    ><i class="fa fa-shopping-bag me-2 bestseller-color"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4">
+            <div class="p-4 rounded bg-light">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <img
+                    src="assets/img/fruite-item-2.jpg"
+                    class="img-fluid bestseller-circle w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="col-6">
+                  <a href="#" class="h6">Organic Raspberry</a>
+                  <div class="d-flex my-3">
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4 class="mb-3">3.12 $</h4>
+                  <a
+                    href="#"
+                    class="btn border border-secondary rounded-pill px-3 bestseller-color"
+                    ><i class="fa fa-shopping-bag me-2 bestseller-color"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4">
+            <div class="p-4 rounded bg-light">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <img
+                    src="assets/img/fruite-item-3.jpg"
+                    class="img-fluid bestseller-circle w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="col-6">
+                  <a href="#" class="h5">Organic Banana</a>
+                  <div class="d-flex my-3">
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4 class="mb-3">3.12 $</h4>
+                  <a
+                    href="#"
+                    class="btn border border-secondary rounded-pill px-3 bestseller-color"
+                    ><i class="fa fa-shopping-bag me-2 bestseller-color"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4">
+            <div class="p-4 rounded bg-light">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <img
+                    src="assets/img/fruite-item-4.jpg"
+                    class="img-fluid bestseller-circle w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="col-6">
+                  <a href="#" class="h5">Organic Apricot</a>
+                  <div class="d-flex my-3">
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4 class="mb-3">3.12 $</h4>
+                  <a
+                    href="#"
+                    class="btn border border-secondary rounded-pill px-3 bestseller-color"
+                    ><i class="fa fa-shopping-bag me-2 bestseller-color"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4">
+            <div class="p-4 rounded bg-light">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <img
+                    src="assets/img/fruite-item-5.jpg"
+                    class="img-fluid bestseller-circle w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="col-6">
+                  <a href="#" class="h5">Organic Grape</a>
+                  <div class="d-flex my-3">
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4 class="mb-3">3.12 $</h4>
+                  <a
+                    href="#"
+                    class="btn border border-secondary rounded-pill px-3 bestseller-color"
+                    ><i class="fa fa-shopping-bag me-2 bestseller-color"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4">
+            <div class="p-4 rounded bg-light">
+              <div class="row align-items-center">
+                <div class="col-6">
+                  <img
+                    src="assets/img/fruite-item-6.jpg"
+                    class="img-fluid bestseller-circle w-100"
+                    alt=""
+                  />
+                </div>
+                <div class="col-6">
+                  <a href="#" class="h5">Organic Apple</a>
+                  <div class="d-flex my-3">
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star bestseller-star-color"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4 class="mb-3">3.12 $</h4>
+                  <a
+                    href="#"
+                    class="btn border border-secondary rounded-pill px-3 bestseller-color"
+                    ><i class="fa fa-shopping-bag me-2 bestseller-color"></i>
+                    Add to cart</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="text-center">
+              <img
+                src="assets/img/fruite-item-1.jpg"
+                class="img-fluid rounded"
+                alt=""
+              />
+              <div class="py-4">
+                <a href="#" class="h5">Organic Orange</a>
+                <div class="d-flex my-3 justify-content-center">
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h4 class="mb-3">3.12 $</h4>
+                <a
+                  href="#"
+                  class="btn border border-secondary rounded-pill px-3 bestseller-color"
+                  ><i class="fa fa-shopping-bag me-2 bestseller-color"></i> Add
+                  to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="text-center">
+              <img
+                src="assets/img/fruite-item-2.jpg"
+                class="img-fluid rounded"
+                alt=""
+              />
+              <div class="py-4">
+                <a href="#" class="h5">Organic Raspberry</a>
+                <div class="d-flex my-3 justify-content-center">
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h4 class="mb-3">3.12 $</h4>
+                <a
+                  href="#"
+                  class="btn border border-secondary rounded-pill px-3 bestseller-color"
+                  ><i class="fa fa-shopping-bag me-2 bestseller-color"></i> Add
+                  to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="text-center">
+              <img
+                src="assets/img/fruite-item-3.jpg"
+                class="img-fluid rounded"
+                alt=""
+              />
+              <div class="py-4">
+                <a href="#" class="h5">Organic Banana</a>
+                <div class="d-flex my-3 justify-content-center">
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h4 class="mb-3">3.12 $</h4>
+                <a
+                  href="#"
+                  class="btn border border-secondary rounded-pill px-3 bestseller-color"
+                  ><i class="fa fa-shopping-bag me-2 bestseller-color"></i> Add
+                  to cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="text-center">
+              <img
+                src="assets/img/fruite-item-4.jpg"
+                class="img-fluid rounded mb-3"
+                alt=""
+              />
+              <div class="py-2">
+                <a href="#" class="h5 ">Organic Apricot</a>
+                <div class="d-flex my-3 justify-content-center">
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star bestseller-star-color"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h4 class="mb-3">3.12 $</h4>
+                <a
+                  href="#"
+                  class="btn border border-secondary rounded-pill px-3 bestseller-color "
+                  ><i class="fa fa-shopping-bag me-2 bestseller-color"></i> Add
+                  to cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bestsaler Product End -->
+
+    <!-- Fact Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="bg-light p-5 rounded">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="counter bg-white rounded p-5">
+                <i class="fa fa-users"></i>
+                <h4>satısfıed customers</h4>
+                <h1>1963</h1>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="counter bg-white rounded p-5">
+                <i class="fa fa-users"></i>
+                <h4>qualıty of servıce</h4>
+                <h1>99%</h1>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="counter bg-white rounded p-5">
+                <i class="fa text-center fa-users fa-4x"></i>
+                <h4>qualıty certıfıcates</h4>
+                <h1>33</h1>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="counter bg-white rounded p-5">
+                <i class="fa fa-users"></i>
+                <h4>Avaılable Products</h4>
+                <h1>789</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fact Start -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial py-5">
+      <div class="container py-5">
+        <div class="testimonial-header text-center">
+          <h4 class="testimonial-text">Our Testimonial</h4>
+          <h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+          <div class="testimonial-item img-border-radius bg-light rounded p-4">
+            <div class="position-relative">
+              <i
+                class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                style="bottom: 30px; right: 0"
+              ></i>
+              <div class="mb-4 pb-4 border-bottom border-secondary">
+                <p class="mb-0">
+                  Lorem Ipsum is simply dummy text of the printing Ipsum has
+                  been the industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+              <div class="d-flex align-items-center flex-nowrap">
+                <div class="bg-secondary rounded">
+                  <img
+                    src="assets/img/testimonial-1.jpg"
+                    class="img-fluid rounded"
+                    style="width: 100px; height: 100px"
+                    alt=""
+                  />
+                </div>
+                <div class="ms-4 d-block">
+                  <h4 class="text-dark">Client Name</h4>
+                  <p class="m-0 pb-3">Profession</p>
+                  <div class="d-flex pe-5">
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item img-border-radius bg-light rounded p-4">
+            <div class="position-relative">
+              <i
+                class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                style="bottom: 30px; right: 0"
+              ></i>
+              <div class="mb-4 pb-4 border-bottom border-secondary">
+                <p class="mb-0">
+                  Lorem Ipsum is simply dummy text of the printing Ipsum has
+                  been the industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+              <div class="d-flex align-items-center flex-nowrap">
+                <div class="bg-secondary rounded">
+                  <img
+                    src="assets/img/testimonial-1.jpg"
+                    class="img-fluid rounded"
+                    style="width: 100px; height: 100px"
+                    alt=""
+                  />
+                </div>
+                <div class="ms-4 d-block">
+                  <h4 class="text-dark">Client Name</h4>
+                  <p class="m-0 pb-3">Profession</p>
+                  <div class="d-flex pe-5">
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item img-border-radius bg-light rounded p-4">
+            <div class="position-relative">
+              <i
+                class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                style="bottom: 30px; right: 0"
+              ></i>
+              <div class="mb-4 pb-4 border-bottom border-secondary">
+                <p class="mb-0">
+                  Lorem Ipsum is simply dummy text of the printing Ipsum has
+                  been the industry's standard dummy text ever since the 1500s,
+                </p>
+              </div>
+              <div class="d-flex align-items-center flex-nowrap">
+                <div class="bg-secondary rounded">
+                  <img
+                    src="assets/img/testimonial-1.jpg"
+                    class="img-fluid rounded"
+                    style="width: 100px; height: 100px"
+                    alt=""
+                  />
+                </div>
+                <div class="ms-4 d-block">
+                  <h4 class="text-dark">Client Name</h4>
+                  <p class="m-0 pb-3">Profession</p>
+                  <div class="d-flex pe-5">
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                    <i class="fas fa-star testimonial-star-color"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tastimonial End -->
+    <!-- JQUERY JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- JS Template  -->
+    <script src="home.js"></script>
+  </body>
 </html>
