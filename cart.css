@@ -4,6 +4,10 @@ body {
     margin: 0;
     padding: 0;
 }
+body {
+  padding-top: 200px; /* navbar yüksekliği kadar */
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -23,6 +27,7 @@ header h1 {
 nav {
     float: right;
 }
+
 nav a {
     margin-left: 20px;
     text-decoration: none;
